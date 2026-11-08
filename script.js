@@ -1,4 +1,7 @@
 function openEnvelope() {
+const music = document.getElementById('bg-music');
+    music.play();
+    
     const envelope = document.querySelector('.envelope');
     const envelopeScreen = document.getElementById('envelope-screen');
     const invitationScreen = document.getElementById('invitation-screen');
