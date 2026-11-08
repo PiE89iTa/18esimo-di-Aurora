@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invito 18° Aurora</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importiamo i font eleganti da Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Pinyon+Script&family=Alex+Brush&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sfondo con decorazioni floreali/scintillanti (puoi inserire un'immagine qui) -->
+    <div class="background-overlay"></div>
+
+    <div class="main-container">
+        
+        <!-- FASE 1: LA BUSTA -->
+        <div id="envelope-screen" class="screen active">
+            <h3 class="instruction-text">TOCCA SULLA BUSTA<br>PER APRIRE L'INVITO</h3>
+            
+            <div class="envelope-wrapper" onclick="openEnvelope()">
+                <div class="envelope">
+                    <!-- Lembo superiore della busta -->
+                    <div class="flap"></div>
+                    <!-- Sigillo con iniziali -->
+                    <div class="seal">
+                        <span>AG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FASE 2: L'INVITO INTERNO (Nascosto all'inizio) -->
+        <div id="invitation-screen" class="screen hidden">
+            
+            <div class="card-content">
+                <!-- Numero 18 con effetto brillantinato -->
+                <h1 class="glitter-number">18</h1>
+                
+                <!-- Nome -->
+                <h2 class="birthday-name">Aurora</h2>
+                
+                <!-- Dettagli -->
+                <p class="details-text">
+                    TI ASPETTO IL<br>
+                    <span class="date">14 GENNAIO 2026</span><br>
+                    ALLE ORE 20:00
+                </p>
+
+                <!-- Bottoni Azione -->
+                <div class="action-buttons">
+                    <!-- Sostituisci il link di href con il link di Google Maps -->
+                    <a href="https://share.google/qIKUSxC4Bn4q9Nqtg" target="_blank" class="btn">
+                        <div class="btn-icon"><img width="32" height="32" src="https://img.icons8.com/?size=100&id=sgb61TPzRhmD&format=png&color=000000" alt="marker" color="pink"/></div>
+                        <span>LOCATION</span>
+                    </a>
+                    
+                    <!-- Sostituisci il link di href con il link del tuo Modulo Google -->
+                    <a href="https://forms.gle/FaysUwGdD3UKB9s87" target="_blank" class="btn">
+                        <div class="btn-icon"><img width="32" height="32" src="https://img.icons8.com/external-kmg-design-flat-kmg-design/32/external-mail-wedding-day-kmg-design-flat-kmg-design.png" alt="external-mail-wedding-day-kmg-design-flat-kmg-design"/></div>
+                        <span>CONFERMA</span>
+                    </a>
+                </div>
+
+                <p class="footer-text">DARE CONFERMA ENTRO IL 4 GENNAIO</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
